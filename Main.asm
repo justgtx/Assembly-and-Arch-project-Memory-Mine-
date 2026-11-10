@@ -52,7 +52,7 @@ main PROC
 
  ;GameLoop will run continuously until the game ends.
  GameLoop:
-  
+  ;Main Functions
   call RenderBoard			;Render the updated board after last user input
   call User_Input		;prompt and validate the user's entry
   call EvalGuess			;evaluate the user's entry
