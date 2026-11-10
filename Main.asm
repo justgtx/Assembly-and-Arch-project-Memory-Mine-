@@ -44,6 +44,8 @@ MAX_MISSES    EQU 3
     input_Guess_buffery byte 4 dup(?) ;input for user guessing which spot to pick
     hint_counter BYTE 03h ; number of hints available to the user, 3 by default
 .code
+mov eax,black(grey * 16)
+call SetTextColor
 main PROC
  call Randomize		;fully randomize the range for later
  ;game initalization procedures to be built
